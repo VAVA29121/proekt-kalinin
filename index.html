@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Кнопки на странице</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: rgb(229, 255, 0);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=“button-container”>
+        <button>Кнопка 1</button>
+        <button>Кнопка 2</button>
+    </div>
+    <script>
+        // Присваиваем обработчик события onclick для каждой кнопки
+        const button1 = document.querySelector(‘button’);
+        button1.addEventListener(‘click’, function () {
+            alert(‘Вы нажали на кнопку 1’);
+        });
+        const button2 = document.querySelector('button');
+        button2.addEventListener('click', function () {
+            alert('Вы нажали на кнопку 2');
+        });  
+    </script>
+</body>
